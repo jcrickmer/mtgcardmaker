@@ -1,0 +1,3 @@
+#!/bin/sh
+export SOURCEPATH=src/java
+java -classpath obj us.newplatyp.mtgcardmaker.MTGCardMaker
