@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards version="0">
+  <card>
+    <title>Builder's Blessing</title>
+    <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=239990&amp;type=card" picURLHq="" picURLSt="">AVR</set>
+    <manacost>3W</manacost>
+    <types><type>Enchantment</type></types>
+    <text>Untapped creatures you control get +0/+2.</text>
+  </card>
+  <card>
+    <title>Sauron</title>
+    <manacost>4RBBB</manacost>
+    <types><type>Planeswalker</type></types>
+    <subtypes><subtype>Sauron</subtype></subtypes>
+    <text>+2 - All creatures get -1/-1 until end of turn.
+-3 - Gain control of target creature.
+-5 - Gain control of target planeswalker.
+-9 - Exile target creature.  Gain control of another target creature or return target creature from any graveyard to the battlefield under your control.  That creature gains deathtouch.</text>
+    <flavortext></flavortext>
+    <loyalty>5</loyalty>
+    <imageuri>input/art/Sauron_art.png</imageuri>
+  </card>
+  <card>
+    <title>Legolas</title>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Elf</subtype></subtypes>
+    <manacost>2GG</manacost>
+    <text>Reach.
+
+Doublestrike.</text>
+    <flavortext>"Yet do not cast all hope away. Tomorrow is unknown. Red oft is found at the rising of the Sun."</flavortext>
+    <power>3</power>
+    <toughness>3</toughness>
+  </card>
+  <card>
+    <title>Flame Mameshiba</title>
+    <manacost>2UG</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text>Flame Mameshiba is not effected by Deathtouch.</text>
+    <flavortext>"All the bad guys do get destroyed.  Well, except maybe the Bunny."</flavortext>
+    <power>4</power>
+    <toughness>3</toughness>
+    <imageuri>input/art/Mameshiba_Charmander_by_Miyukx.jpeg</imageuri>
+  </card>
+  <card>
+    <title>Edamame</title>
+    <manacost>3W</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text>Edamame has hexproof.</text>
+    <flavortext>"Let's go!"</flavortext>
+    <power>4</power>
+    <toughness>5</toughness>
+    <imageuri>input/art/Edamame_art.jpg</imageuri>
+  </card>
+  <card>
+    <title>Lentil</title>
+    <manacost>2GU</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text>Whenever a creature enters the battlefield, if its power is 3 or less, draw a card.</text>
+    <flavortext>"Wake up!  It's only been 4 seconds!"</flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri>input/art/Lentil_art.gif</imageuri>
+  </card>
+
+</cards>
