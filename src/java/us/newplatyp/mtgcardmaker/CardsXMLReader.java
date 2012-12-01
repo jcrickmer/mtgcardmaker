@@ -101,6 +101,7 @@ public class CardsXMLReader {
 		String flavortext = getTextValue(empEl,"flavortext");
 		String rawMana = getTextValue(empEl,"manacost");
 		String imageURI = getTextValue(empEl,"imageuri");
+		String artist = getTextValue(empEl,"artist");
 		int power = getIntValue(empEl,"power");
 		int toughness = getIntValue(empEl,"toughness");
 		int loyalty = getIntValue(empEl,"loyalty");
@@ -112,6 +113,7 @@ public class CardsXMLReader {
 		c.setText(text);
 		c.setFlavorText(flavortext);
 		c.setImageURI(imageURI);
+		c.setArtist(artist);
 		c.setPower(power);
 		c.setToughness(toughness);
 		c.setLoyalty(loyalty);

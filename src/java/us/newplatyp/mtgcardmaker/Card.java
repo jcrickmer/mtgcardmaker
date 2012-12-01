@@ -9,6 +9,7 @@ public class Card {
     final static String C_SYMBOLS_DIR = "path.symbols";
 
     private String title = "";
+    private String artist = null;
     private String imageURI = null;
 	private int power = 0;
 	private int toughness = 0;
@@ -64,6 +65,14 @@ public class Card {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public String getArtist() {
+		return this.artist;
+	}
+
+	public void setArtist(String artist) {
+		this.artist = artist;
 	}
 
 	public String getText() {

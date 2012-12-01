@@ -116,6 +116,22 @@ public class CardImageProducer {
 			ig2.drawString(message.toString(), 36, 322);
 		}
 
+		// Artist
+		{
+			Font font = new Font("Times", Font.BOLD, 12);
+			ig2.setFont(font);
+			String message = card.getArtist();
+			if (message == null) {
+			    message = "Unknown";
+			}
+			FontMetrics fontMetrics = ig2.getFontMetrics();
+			int stringWidth = fontMetrics.stringWidth(message.toString());
+			int stringHeight = fontMetrics.getAscent();
+			ig2.setPaint(Color.black);
+			// CENTER //ig2.drawString(message, (width - stringWidth) / 2, height / 2 + stringHeight / 4);
+			ig2.drawString(message.toString(), 66, 494);
+		}
+
 		// Text
 		try {
 			StringBuffer message = new StringBuffer();
