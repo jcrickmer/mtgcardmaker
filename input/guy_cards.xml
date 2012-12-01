@@ -57,28 +57,32 @@ At the begining of your up keep, lose 3 life</text>
     <toughness>5</toughness>
     <imageuri></imageuri>
   </card>
-<!--
+
   <card>
-    <title></title>
-    <manacost></manacost>
-    <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text></text>
-    <flavortext></flavortext>
-    <power>2</power>
-    <toughness>2</toughness>
+    <title>Excluded Uncool Drake</title>
+    <manacost>3U</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Drake</subtype></subtypes>
+    <text>Flying
+
+protection from non- flying creatures</text>
+    <flavortext>As King Awesome gained power, he banished ones that he feared</flavortext>
+    <power>4</power>
+    <toughness>3</toughness>
     <imageuri></imageuri>
   </card>
 
   <card>
-    <title></title>
-    <manacost></manacost>
+    <title>The Lord of The Pits</title>
+    <manacost>4RBB</manacost>
     <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text></text>
-    <flavortext></flavortext>
-    <power>2</power>
-    <toughness>2</toughness>
+    <subtypes><subtype>Demon Dragon</subtype></subtypes>
+    <text>Flying, First Strike
+
+At the beginning of your upkeep, destroy target creature you don't control</text>
+    <flavortext>Although he was banished, he still fought back</flavortext>
+    <power>6</power>
+    <toughness>6</toughness>
     <imageuri></imageuri>
   </card>
 
