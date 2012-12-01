@@ -27,8 +27,12 @@ public class MTGCardMaker implements MainProgram {
 		config.setProperty("path.symbols","symbols");
 		config.setProperty("template.definition.filename","input/templates/basic/basic.xml");
 
+		String cardlist = "input/cards.xml";
+		if (args.length > 0) {
+		    cardlist = args[0];
+		}
 		MTGCardMaker maker = new MTGCardMaker(config);
-		maker.go();
+		maker.go(cardlist);
 	};
 
 	private Configuration config;
@@ -37,9 +41,9 @@ public class MTGCardMaker implements MainProgram {
 		this.config = config;
 	}
 
-	public void go() {
+	public void go(String cardlist) {
 		CardsXMLReader reader = new CardsXMLReader(this.config);
-		reader.goForIt("input/cards.xml");
+		reader.goForIt(cardlist);
 
 		TemplateSet tset = new TemplateSet(this.config.getProperty("template.definition.filename"));
 

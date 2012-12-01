@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards version="0">
+  <card>
+    <title>Lentil</title>
+    <manacost>2GU</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text>Whenever a creature enters the battlefield, if its power is 3 or less, draw a card.</text>
+    <flavortext>"Wake up!  It's only been 4 seconds!"</flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri>input/art/Lentil_art.gif</imageuri>
+  </card>
+
+  <card>
+    <title>Awesomeness</title>
+    <manacost>1WW</manacost>
+    <types><type>Enchantment</type></types>
+    <subtypes><subtype>Aura</subtype></subtypes>
+    <text>Enchant creature
+
+Enchanted creature gets +1/+1 for each word in it's text that has 5 or more letters</text>
+    <flavortext>I'm awesome. See! I have trample and deathtouch and lifelink...
+      --King Awesome</flavortext>
+    <power></power>
+    <toughness></toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>King Awesome</title>
+    <manacost>1WWG</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Human</subtype></subtypes>
+    <text>If there is one other card on the battlefield with the word awesome in it's name, King Awesome gains trample.
+
+If there are two other cards on the battlefield with the word awesome in it's name, King Awesome gains deathouch
+
+If there are three other cards on the battlefield with the word awesome in it's name, King Awesome gains lifelink</text>
+    <flavortext>As the king of awesome, you are not awesome.
+   --King Awesome</flavortext>
+    <power>2</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Demon from Hell</title>
+    <manacost>B1B1B</manacost>
+    <types><type></type><type>Creature</type></types>
+    <subtypes><subtype>Demon</subtype></subtypes>
+    <text>Flying,First strike,Deathtouch
+
+At the begining of your up keep, lose 3 life</text>
+    <flavortext>As the demon rose... Hey! What's with the mana cost!!! -Editor</flavortext>
+    <power>5</power>
+    <toughness>5</toughness>
+    <imageuri></imageuri>
+  </card>
+<!--
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
+
+-->
+</cards>
