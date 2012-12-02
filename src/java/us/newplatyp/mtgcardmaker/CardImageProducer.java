@@ -50,7 +50,7 @@ public class CardImageProducer {
 		ig2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
 
 		// Title
-		{
+		if (card.getTitle() != null) {
 			Font font = new Font("Times", Font.BOLD, 18);
 			ig2.setFont(font);
 			String message = card.getTitle();
@@ -72,7 +72,9 @@ public class CardImageProducer {
 			int add = end - (symbCount * 17);
 			while (it.hasNext()) {
 				mana = (Mana)(it.next());
-				BufferedImage manaImage = ImageIO.read(new File(this.master.getConfiguration().getProperty("path.symbols",".") + "/" + mana.getSymbolFilename()));
+				File manaImage_F = new File(this.master.getConfiguration().getProperty("path.symbols",".") + "/" + mana.getSymbolFilename());
+				System.err.println("File: " + manaImage_F.getName());
+				BufferedImage manaImage = ImageIO.read(manaImage_F);
 				ig2.drawImage(manaImage, add, 36, null);
 				add = add + 17;
 			}
@@ -81,19 +83,19 @@ public class CardImageProducer {
 		// image
 		if (card.getImageURI() != null) {
 		    try {
-			int viewportHeight = 313;
-			int viewportWidth = 248;
+			int viewportWidth = 313;
+			int viewportHeight = 246;
 			BufferedImage cardImage = ImageIO.read(new File(card.getImageURI()));
 			float yScale = (float)viewportHeight / (float)(cardImage.getHeight());
 			float xScale = (float)viewportWidth / (float)(cardImage.getWidth());
-			BufferedImage after = new BufferedImage(viewportHeight, viewportWidth, BufferedImage.TYPE_INT_ARGB);
+			BufferedImage after = new BufferedImage(viewportWidth, viewportHeight, BufferedImage.TYPE_INT_ARGB);
 			AffineTransform at = new AffineTransform();
 			System.out.println("scaling to " + yScale + " x " + xScale);
 			at.scale(Math.max(yScale, xScale),Math.max(yScale, xScale));
 			AffineTransformOp scaleOp = new AffineTransformOp(at, AffineTransformOp.TYPE_BILINEAR);
 			after = scaleOp.filter(cardImage, after);
 
-			ig2.drawImage(after, 32, 56, null);
+			ig2.drawImage(after, 32, 57, null);
 		    } catch (IOException ioe) {
 			System.err.println("For card " + card.getTitle() + ", unable to read in image " + card.getImageURI());
 		    }
