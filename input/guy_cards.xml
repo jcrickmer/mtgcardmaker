@@ -87,15 +87,134 @@ At the beginning of your upkeep, destroy target creature you don't control</text
   </card>
 
   <card>
-    <title></title>
-    <manacost></manacost>
-    <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text></text>
-    <flavortext></flavortext>
+    <title>Awesome Illusion</title>
+    <manacost>3UUU</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Illusion</subtype></subtypes>
+    <text>Protection from Instants,Sorceries,Equipments,and Enchantments
+
+Whenever Awesome Illusion is targeted, counter that ability and destroy the permenant that it came from
+
+Awesome Illusion isn't put into the graveyard as a result of a Instant or sorcery</text>
+    <flavortext>As a result of one of my failed experiments,I would like to banish them,but they don't want to be banished
+   -King Awesome</flavortext>
+    <power>3</power>
+    <toughness>3</toughness>
+    <imageuri>input/art/Awesome_Illusion_art.jpeg</imageuri>
+    <artist>Guy Crickmer</artist>
+  </card>
+
+  <card>
+    <title>Spike Ball</title>
+    <manacost>3</manacost>
+    <types><type>Artifact</type><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball</subtype></subtypes>
+    <text>Defender,deathtouch</text>
+    <flavortext>All Spike Balls are deadly,exept for maybe that one. I want to pet it!
+     -Last words of an Awesome solder</flavortext>
+    <power>2</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Darksteel Spike Ball</title>
+    <manacost>4</manacost>
+    <types><type>Artifact</type><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball</subtype></subtypes>
+    <text>Defender,deathtouch, Indestructible</text>
+    <flavortext>Bring the spike balls in for banishing. If you can't, destroy them
+But your awesomeness, that's impossible</flavortext>
     <power>2</power>
     <toughness>2</toughness>
     <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Spike Ball Alchemist</title>
+    <manacost>2U</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Human</subtype></subtypes>
+    <text>When Spike Ball Alchemist enters the battlefield, search your library for a Spike Ball, reveal t, and put it in your hand. </text>
+    <flavortext>Few were at peace with Spike Ball, but their numbers are made up through thought</flavortext>
+    <power>1</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Spike Ball Commander</title>
+    <manacost>5</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball</subtype></subtypes>
+    <text>When Spike Ball Commander enters the battlefield,put a 1/1 Spike Ball creature token  with defender onto the battlefield under your control.
+
+Other spike balls you control gain first strike and lose defender</text>
+    <flavortext>When the humans came into Spike Ball territory, they just avoided the Spike Balls. But the Spike Balls didn't like either decision.</flavortext>
+    <power>3</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+  <card>
+    <title>Spike Ball Soldier</title>
+    <manacost>3</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball</subtype></subtypes>
+    <text>Other Spike Balls get +1/+1</text>
+    <flavortext>The only way to destoy Spike Balls used to be very dangerous.Now even that's impossible.</flavortext>
+    <power>4</power>
+    <toughness>5</toughness>
+    <imageuri>input/art/Edamame_art.jpg</imageuri>
+  </card>
+  <card>
+    <title>Harrin of Ball's Pass</title>
+    <manacost>3RR</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Human</subtype></subtypes>
+    <text>{T}:target Spike Ball loses deathtouch until end of turn.That creature fights Harrin of Ball's Pass</text>
+    <flavortext>Being the only one known to destroy Spike Balls effectivlely, King Awesome hired him after they started growing legs.</flavortext>
+    <power>4</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Harrin of Spike Valley</title>
+    <manacost>3WR</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Human</subtype></subtypes>
+    <text>{T} destroy target green creture
+{T} All Spike Balls you control lose defender and get +3/+3 until end of turn. </text>
+    <flavortext>After fighting them for King Awesome for a year,Harrin learned the wisdom of the Spike Balls</flavortext>
+    <power>2</power>
+    <toughness>3</toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Spike Valley</title>
+    <types><type>Legendary</type><type>Land</type></types>
+    <subtypes><subtype></subtype></subtypes>
+    <text>{T}: Add {W}, {R} or {2} to your mana pool
+
+{T}: Regenerate target Spike Ball </text>
+    <flavortext>A place of rest and peace for friends... But something else for intruders</flavortext>
+    <power></power>
+    <toughness></toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Death Spike Ball</title>
+    <manacost>4</manacost>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball</subtype></subtypes>
+    <text>Deathtouch</text>
+    <flavortext>King Awesome started getting more answers for Spike Balls,Spike balls started getting more answers for King Awesome.</flavortext>
+    <power>4</power>
+    <toughness>4</toughness>
+    <imageuri>input/art/Death_Spike_Ball.jpeg</imageuri>
+    <artist>Beck Crickmer</artist>
   </card>
 
   <card>
@@ -122,5 +241,16 @@ At the beginning of your upkeep, destroy target creature you don't control</text
     <imageuri></imageuri>
   </card>
 
+  <card>
+    <title></title>
+    <manacost></manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text></text>
+    <flavortext></flavortext>
+    <power>2</power>
+    <toughness>2</toughness>
+    <imageuri></imageuri>
+  </card>
 -->
 </cards>

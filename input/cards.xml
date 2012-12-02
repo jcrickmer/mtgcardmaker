@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cards version="0">
   <card>
-    <title>Builder's Blessing</title>
-    <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=239990&amp;type=card" picURLHq="" picURLSt="">AVR</set>
-    <manacost>3W</manacost>
-    <types><type>Enchantment</type></types>
-    <text>Untapped creatures you control get +0/+2.</text>
+    <title>Frodo</title>
+    <manacost>2GW</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Hobbit</subtype></subtypes>
+    <text>Unblockable.
+
+Hobbits cannot have -1/-1 counters.</text>
   </card>
   <card>
     <title>Sauron</title>
@@ -31,39 +33,29 @@ Doublestrike.</text>
     <flavortext>"Yet do not cast all hope away. Tomorrow is unknown. Red oft is found at the rising of the Sun."</flavortext>
     <power>3</power>
     <toughness>3</toughness>
+    <imageuri>input/art/Legolas_-_in_Two_Towers.PNG</imageuri>
   </card>
   <card>
-    <title>Flame Mameshiba</title>
-    <manacost>2UG</manacost>
-    <types><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text>Flame Mameshiba is not effected by Deathtouch.</text>
-    <flavortext>"All the bad guys do get destroyed.  Well, except maybe the Bunny."</flavortext>
-    <power>4</power>
-    <toughness>3</toughness>
-    <imageuri>input/art/Mameshiba_Charmander_by_Miyukx.jpeg</imageuri>
-  </card>
-  <card>
-    <title>Edamame</title>
-    <manacost>3W</manacost>
-    <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text>Edamame has hexproof.</text>
-    <flavortext>"Let's go!"</flavortext>
-    <power>4</power>
-    <toughness>5</toughness>
-    <imageuri>input/art/Edamame_art.jpg</imageuri>
-  </card>
-  <card>
-    <title>Lentil</title>
-    <manacost>2GU</manacost>
-    <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text>Whenever a creature enters the battlefield, if its power is 3 or less, draw a card.</text>
-    <flavortext>"Wake up!  It's only been 4 seconds!"</flavortext>
-    <power>2</power>
-    <toughness>2</toughness>
-    <imageuri>input/art/Lentil_art.gif</imageuri>
-  </card>
+    <title>Dead Marshes</title>
+    <types><type>Land</type></types>
+    <manacost></manacost>
+    <text>Dead Marshes enters the battlefield tapped unless you control two or fewer other lands.
 
+{T}:  Add {W} or {B} to your mana pool.</text>
+    <flavortext>Mists curled and smoked from dark and noisome pools.  The reek of them hung stifling in the still air.</flavortext><!-- two towers, page 630-->
+    <imageuri>input/art/Ted_Nasmith_-_Through_the_Marshes.jpg</imageuri>
+    <artist>Ted Nasmith</artist>
+  </card>
+  <card>
+    <title>Shelob</title>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Spider</subtype></subtypes>
+    <manacost>2UBB</manacost>
+    <text>Reach.
+
+{X}{B}:  Target creature gets -1/-1 and cannot attack, block, or activate abilities until Shelob's owners next upkeep.</text>
+    <flavortext>"She served none but herself, drinking the blood of Elves and Men, bloated and grown fat with endless brooding on her feasts, weaving webs of shadow; for all living things were her food, and her vomit darkness." -- The Two Towers</flavortext><!-- two towers, page -->
+    <imageuri>input/art/Shelob2.jpg</imageuri>
+    <!-- artist>Ted Nasmith</artist -->
+  </card>
 </cards>
