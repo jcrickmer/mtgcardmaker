@@ -10,6 +10,10 @@ public class Template {
 	this.filename = "mtg_card_150_dpi_background.png";
     }
 
+    public Template(String filename) {
+	this.filename = filename;
+    }
+
     public String getFilename() {
 	return this.filename;
     }
