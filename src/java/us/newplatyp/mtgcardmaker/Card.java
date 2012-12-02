@@ -90,8 +90,11 @@ public class Card {
 	}
 
 	public String getTextAsHTML() {
-		String result = this.getText().replaceAll("(\r\n|\n)", "<br/>");
-		return result;
+	    String result = "";
+	    if (this.getText() != null) {
+		result = this.getText().replaceAll("(\r\n|\n)", "<br/>");
+	    }
+	    return result;
 	}
 
 	public void setFlavorText(String flavorText) {
@@ -147,74 +150,76 @@ public class Card {
 		this.manaCost.set(0, mana);
 	}
 
-	public void setManaFromText(String manastring) {
-		this.manaCost.clear();
-		int len = manastring.length();
-		for (int h = 0; h < len ; h++) {
-			String cc = manastring.substring(h, h+1);
-			if (cc.toUpperCase().equals("X")) {
-				this.addMana(Mana.X);
-			} else if (cc.toUpperCase().equals("P")) {
-				System.err.println("No support for Phyrexian mana yet. " + this.title + ", " + manastring);
-			} else if (cc.toUpperCase().equals("W")) {
-				this.addMana(Mana.W);
-			} else if (cc.toUpperCase().equals("U")) {
-				this.addMana(Mana.U);
-			} else if (cc.toUpperCase().equals("B")) {
-				this.addMana(Mana.B);
-			} else if (cc.toUpperCase().equals("R")) {
-				this.addMana(Mana.R);
-			} else if (cc.toUpperCase().equals("G")) {
-				this.addMana(Mana.G);
-			} else if (cc.equals("1") || cc.equals("2") || cc.equals("3") || cc.equals("4") || cc.equals("5") || cc.equals("6") || cc.equals("7") || cc.equals("8") || cc.equals("9") || cc.equals("0")) {
-				// check 1 ahead...
-				if (len > h+1) {
-					String ra = manastring.substring(h+1, h+2);
-					if (ra.equals("1") || ra.equals("2") || ra.equals("3") || ra.equals("4") || ra.equals("5") || ra.equals("6") || ra.equals("7") || ra.equals("8") || ra.equals("9") || ra.equals("0")) {
-						cc = cc + ra;
-						h++;
-					}
-				}
-				int colorless = Integer.parseInt(cc);
-				switch (colorless) {
-				case 0:  this.addMana(Mana.c0);
-					break;
-				case 1:  this.addMana(Mana.c1);
-					break;
-				case 2:  this.addMana(Mana.c2);
-					break;
-				case 3:  this.addMana(Mana.c3);
-					break;
-				case 4:  this.addMana(Mana.c4);
-					break;
-				case 5:  this.addMana(Mana.c5);
-					break;
-				case 6:  this.addMana(Mana.c6);
-					break;
-				case 7:  this.addMana(Mana.c7);
-					break;
-				case 8:  this.addMana(Mana.c8);
-					break;
-				case 9:  this.addMana(Mana.c9);
-					break;
-				case 10:  this.addMana(Mana.c10);
-					break;
-				case 11:  this.addMana(Mana.c11);
-					break;
-				case 12:  this.addMana(Mana.c12);
-					break;
-				case 13:  this.addMana(Mana.c13);
-					break;
-				case 14:  this.addMana(Mana.c14);
-					break;
-				default:  this.addMana(Mana.c15);
-					break;
-				}
-				
+    public void setManaFromText(String manastring) {
+	this.manaCost.clear();
+	if (manastring != null) {
+	    int len = manastring.length();
+	    for (int h = 0; h < len ; h++) {
+		String cc = manastring.substring(h, h+1);
+		if (cc.toUpperCase().equals("X")) {
+		    this.addMana(Mana.X);
+		} else if (cc.toUpperCase().equals("P")) {
+		    System.err.println("No support for Phyrexian mana yet. " + this.title + ", " + manastring);
+		} else if (cc.toUpperCase().equals("W")) {
+		    this.addMana(Mana.W);
+		} else if (cc.toUpperCase().equals("U")) {
+		    this.addMana(Mana.U);
+		} else if (cc.toUpperCase().equals("B")) {
+		    this.addMana(Mana.B);
+		} else if (cc.toUpperCase().equals("R")) {
+		    this.addMana(Mana.R);
+		} else if (cc.toUpperCase().equals("G")) {
+		    this.addMana(Mana.G);
+		} else if (cc.equals("1") || cc.equals("2") || cc.equals("3") || cc.equals("4") || cc.equals("5") || cc.equals("6") || cc.equals("7") || cc.equals("8") || cc.equals("9") || cc.equals("0")) {
+		    // check 1 ahead...
+		    if (len > h+1) {
+			String ra = manastring.substring(h+1, h+2);
+			if (ra.equals("1") || ra.equals("2") || ra.equals("3") || ra.equals("4") || ra.equals("5") || ra.equals("6") || ra.equals("7") || ra.equals("8") || ra.equals("9") || ra.equals("0")) {
+			    cc = cc + ra;
+			    h++;
 			}
+		    }
+		    int colorless = Integer.parseInt(cc);
+		    switch (colorless) {
+		    case 0:  this.addMana(Mana.c0);
+			break;
+		    case 1:  this.addMana(Mana.c1);
+			break;
+		    case 2:  this.addMana(Mana.c2);
+			break;
+		    case 3:  this.addMana(Mana.c3);
+			break;
+		    case 4:  this.addMana(Mana.c4);
+			break;
+		    case 5:  this.addMana(Mana.c5);
+			break;
+		    case 6:  this.addMana(Mana.c6);
+			break;
+		    case 7:  this.addMana(Mana.c7);
+			break;
+		    case 8:  this.addMana(Mana.c8);
+			break;
+		    case 9:  this.addMana(Mana.c9);
+			break;
+		    case 10:  this.addMana(Mana.c10);
+			break;
+		    case 11:  this.addMana(Mana.c11);
+			break;
+		    case 12:  this.addMana(Mana.c12);
+			break;
+		    case 13:  this.addMana(Mana.c13);
+			break;
+		    case 14:  this.addMana(Mana.c14);
+			break;
+		    default:  this.addMana(Mana.c15);
+			break;
+		    }
+		    
 		}
+	    }
 	}
-
+    }
+	
 	public String getMana() {
 		StringBuffer result = new StringBuffer();
 		for (int g = 0; g < this.manaCost.size(); g++) {
