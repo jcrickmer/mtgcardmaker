@@ -89,10 +89,17 @@ public class Card {
 		return this.imageURI;
 	}
 
-	public String getTextAsHTML() {
+	public String getTextAsHTML(String symbolsPath) {
 	    String result = "";
+	    if (symbolsPath == null) {
+		symbolsPath = "";
+	    }
 	    if (this.getText() != null) {
 		result = this.getText().replaceAll("(\r\n|\n)", "<br/>");
+		//result = java.util.regex.Pattern.compile("\\{(W|U|B|R|G|X)\\}").matcher(result).replaceAll("$1");
+		result = result.replaceAll("\\{(W|U|B|R|G|X)\\}", "<img height=\"12\" width=\"12\" src=\"file:///" + symbolsPath + "/symbol_mana_$1_small.gif\"/>");
+		result = result.replaceAll("\\{(\\d+)\\}", "<img height=\"12\" width=\"12\" src=\"file:///" + symbolsPath + "/symbol_mana_$1_small.gif\"/>");
+		result = result.replaceAll("\\{T\\}", "<img height=\"12\" width=\"12\" src=\"file:///" + symbolsPath + "/symbol_tap_small.gif\"/>");
 	    }
 	    return result;
 	}

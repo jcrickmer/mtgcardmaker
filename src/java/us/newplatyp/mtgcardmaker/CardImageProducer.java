@@ -28,12 +28,16 @@ import us.newplatyp.util.Configuration;
 public class CardImageProducer {
 
     private MainProgram master;
-
+    private String symbolsPath;
     private TemplateSet tset;
 
     public CardImageProducer(MainProgram master, TemplateSet tset) {
 	this.master = master;
 	this.tset = tset;
+
+	File symbDir = new File(this.master.getConfiguration().getProperty("path.symbols","symbols"));
+	this.symbolsPath = symbDir.getAbsolutePath();
+
     }
 
     public void produce(Card card) throws IOException {
@@ -59,7 +63,7 @@ public class CardImageProducer {
 			//int stringHeight = fontMetrics.getAscent();
 			ig2.setPaint(Color.black);
 			// CENTER //ig2.drawString(message, (width - stringWidth) / 2, height / 2 + stringHeight / 4);
-			ig2.drawString(message, 40, 48);
+			ig2.drawString(message, 34, 49);
 		}
 
 		// Cost
@@ -72,7 +76,7 @@ public class CardImageProducer {
 			int add = end - (symbCount * 17);
 			while (it.hasNext()) {
 				mana = (Mana)(it.next());
-				File manaImage_F = new File(this.master.getConfiguration().getProperty("path.symbols",".") + "/" + mana.getSymbolFilename());
+				File manaImage_F = new File(this.symbolsPath + "/" + mana.getSymbolFilename());
 				System.err.println("File: " + manaImage_F.getName());
 				BufferedImage manaImage = ImageIO.read(manaImage_F);
 				ig2.drawImage(manaImage, add, 36, null);
@@ -115,7 +119,7 @@ public class CardImageProducer {
 			int stringHeight = fontMetrics.getAscent();
 			ig2.setPaint(Color.black);
 			// CENTER //ig2.drawString(message, (width - stringWidth) / 2, height / 2 + stringHeight / 4);
-			ig2.drawString(message.toString(), 36, 322);
+			ig2.drawString(message.toString(), 34, 323);
 		}
 
 		// Artist
@@ -137,7 +141,7 @@ public class CardImageProducer {
 		// Text
 		try {
 			StringBuffer message = new StringBuffer();
-			message.append(card.getTextAsHTML());
+			message.append(card.getTextAsHTML(this.symbolsPath));
 			String ft = card.getFlavorText();
 			if (ft != null && ! ft.equals("")) {
 				if (message.length() > 0) {
