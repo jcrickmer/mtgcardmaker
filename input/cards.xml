@@ -22,6 +22,7 @@ Hobbits cannot have -1/-1 counters.</text>
     <loyalty>5</loyalty>
     <imageuri>input/art/Sauron_art.png</imageuri>
   </card>
+
   <card>
     <title>Legolas</title>
     <types><type>Legendary</type><type>Creature</type></types>
@@ -35,6 +36,35 @@ Doublestrike.</text>
     <toughness>3</toughness>
     <imageuri>input/art/Legolas_-_in_Two_Towers.PNG</imageuri>
   </card>
+
+  <card>
+    <title>Smaug</title>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Dragon</subtype></subtypes>
+    <manacost>4RRR</manacost>
+    <text>Flying
+
+{R}: Smog gets +1/+0.
+
+When Smaug enters the battlefield, you may search any library for an artifact and place that artifact tapped onto the battlefield under your control.</text>
+    <flavortext>"Revenge! Revenge! The King under the Mountain is dead and where are his kin that dare seek revenge?"</flavortext>
+    <power>6</power>
+    <toughness>6</toughness>
+    <imageuri>input/art/smog_image.png</imageuri>
+  </card>
+
+  <card>
+    <title>Udûn</title>
+    <types><type>Land</type></types>
+    <manacost></manacost>
+    <text>Udûn enters the battlefield tapped unless you control two or fewer other lands.
+
+{T}:  Add {B} or {R} to your mana pool.</text>
+    <flavortext>The valley was filled black with smoke, and acrid with the sulfur of hate older than the mountains.</flavortext>
+    <imageuri>input/art/udun.jpeg</imageuri>
+    <artist>Ted Nasmith</artist>
+  </card>
+
   <card>
     <title>Dead Marshes</title>
     <types><type>Land</type></types>
@@ -46,6 +76,7 @@ Doublestrike.</text>
     <imageuri>input/art/Ted_Nasmith_-_Through_the_Marshes.jpg</imageuri>
     <artist>Ted Nasmith</artist>
   </card>
+
   <card>
     <title>Shelob</title>
     <types><type>Legendary</type><type>Creature</type></types>
