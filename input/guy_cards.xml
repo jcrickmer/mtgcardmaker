@@ -202,6 +202,7 @@ Other spike balls you control gain first strike and lose defender</text>
     <power></power>
     <toughness></toughness>
     <imageuri></imageuri>
+    <artist>????????</artist>
   </card>
 
   <card>
@@ -218,15 +219,55 @@ Other spike balls you control gain first strike and lose defender</text>
   </card>
 
   <card>
-    <title></title>
+    <title>Spike Ball Archer</title>
     <manacost></manacost>
-    <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text></text>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Spike Ball Archer</subtype></subtypes>
+    <text>Deathtouch,Defender
+{T}:Spike Ball Archer does 1 damage to target creature or player</text>
     <flavortext></flavortext>
-    <power>2</power>
-    <toughness>2</toughness>
+    <power>3</power>
+    <toughness>1</toughness>
     <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Giant Mace</title>
+    <manacost>4</manacost>
+    <types><type>Artifact</type></types>
+    <subtypes><subtype>Equipment</subtype></subtypes>
+    <text>Equiped creature gets +2/+2 and Double Strike</text>
+    <flavortext>Wars for Goblins consist of doging.Wars for other creatures consist of swinging.
+     -Harrin</flavortext>
+    <power></power>
+    <toughness></toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Harrin's Betrayl</title>
+    <manacost>XRB</manacost>
+    <types><type>Sorcery</type></types>
+    <subtypes><subtype></subtype></subtypes>
+    <text>Do X damage to target creature you don't control.
+Do X+3 damage to target opponent</text>
+    <flavortext>When Harrin quit,the result for all of awesomeness was near fatal</flavortext>
+    <power></power>
+    <toughness></toughness>
+    <imageuri></imageuri>
+  </card>
+
+  <card>
+    <title>Scert,Goblin Machanist</title>
+    <manacost>2RR</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Goblin</subtype></subtypes>
+    <text>{T}: Return to the battlefield one artifact that used to be on the battlefield</text>
+    <flavortext>Scert was the best machanic of his time.
+Unfortunatly,Lord Awesome feared machines.</flavortext>
+    <power>1</power>
+    <toughness>2</toughness>
+    <imageuri>input/art/Lentil_art.gif</imageuri>
   </card>
 
   <card>
@@ -242,15 +283,28 @@ Other spike balls you control gain first strike and lose defender</text>
   </card>
 
   <card>
-    <title></title>
-    <manacost></manacost>
+    <title>Lord Awesome, Corrupt Judge</title>
+    <manacost>2GBBB</manacost>
     <types><type>Legendary</type><type>Creature</type></types>
-    <subtypes><subtype>Mameshiba</subtype></subtypes>
-    <text></text>
-    <flavortext></flavortext>
+    <subtypes><subtype>Human</subtype></subtypes>
+    <text>Exile target creature
+At the Begining of your Upkeep,a random exiled creature exiled by this creature does damage equal to it's power to you</text>
+    <flavortext>As he became more powerful,he backstabbed friends. But his evil came with a price, mightmares</flavortext>
     <power>2</power>
     <toughness>2</toughness>
-    <imageuri></imageuri>
+    <imageuri>input/art/Lentil_art.gif</imageuri>
   </card>
--->
+
+  <card>
+    <title>What?!</title>
+    <manacost>7</manacost>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Mameshiba</subtype></subtypes>
+    <text>input/art/Lentil_art.gif</text>
+    <flavortext>Y'know, that is a cool picture of me</flavortext>
+    <power>8</power>
+    <toughness>6</toughness>
+    <imageuri>input/art/Lentil_art.gif</imageuri>
+  </card>
+
 </cards>
