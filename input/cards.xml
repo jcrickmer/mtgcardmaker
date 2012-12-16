@@ -86,7 +86,22 @@ When Smaug enters the battlefield, you may search any library for an artifact an
 
 {X}{B}:  Target creature gets -1/-1 and cannot attack, block, or activate abilities until Shelob's owners next upkeep.</text>
     <flavortext>"She served none but herself, drinking the blood of Elves and Men, bloated and grown fat with endless brooding on her feasts, weaving webs of shadow; for all living things were her food, and her vomit darkness." -- The Two Towers</flavortext><!-- two towers, page -->
+    <power>6</power>
+    <toughness>6</toughness>
     <imageuri>input/art/Shelob2.jpg</imageuri>
     <!-- artist>Ted Nasmith</artist -->
+  </card>
+
+  <card>
+    <title>Stone Giant</title>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Giant</subtype></subtypes>
+    <manacost>2RR</manacost>
+    <text>{T}: Target creature you control with toughness less than Stone Giant's power gains flying until end of turn. Destroy that creature at the beginning of the next end step.</text>
+    <flavortext></flavortext>
+    <power>3</power>
+    <toughness>4</toughness>
+    <imageuri>input/art/Stone_giant_-_Francis_Tsai.png</imageuri>
+    <artist>Fracis Tsai</artist>
   </card>
 </cards>
