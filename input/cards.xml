@@ -104,4 +104,46 @@ When Smaug enters the battlefield, you may search any library for an artifact an
     <imageuri>input/art/Stone_giant_-_Francis_Tsai.png</imageuri>
     <artist>Fracis Tsai</artist>
   </card>
+
+  <card>
+    <title>Goblin</title>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Goblin</subtype></subtypes>
+    <manacost>R</manacost>
+    <text></text>
+    <flavortext></flavortext>
+    <power>1</power>
+    <toughness>1</toughness>
+    <imageuri>input/art/Goblin_Misty_Mountains.jpeg</imageuri>
+  </card>
+  <card>
+    <title>Goblin Brute</title>
+    <types><type>Creature</type></types>
+    <subtypes><subtype>Goblin</subtype></subtypes>
+    <manacost>1R</manacost>
+    <text>Mogg Flunkies can't attack or block alone.</text>
+    <flavortext></flavortext>
+    <power>3</power>
+    <toughness>3</toughness>
+    <!-- <imageuri>input/art/Goblin_Misty_Mountains.jpeg</imageuri>
+    <artist></artist> -->
+    <notes>Same as Mogg Flunkies - http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=249706</notes>
+  </card>
+  <card>
+    <title>The Great Goblin</title>
+    <types><type>Legendary</type><type>Creature</type></types>
+    <subtypes><subtype>Goblin</subtype></subtypes>
+    <manacost>3RR</manacost>
+    <text>Other Goblin creatures you control get +1/+1 and have haste.
+
+{T}: Put X 1/1 red Goblin creature tokens onto the battlefield, where X is the number of Goblins you control.</text>
+    <flavortext></flavortext>
+    <power>3</power>
+    <toughness>3</toughness>
+    <!-- <imageuri>input/art/Goblin_Misty_Mountains.jpeg</imageuri>
+    <artist></artist> -->
+    <notes>Combination of Goblin CHeiftain and Krenko</notes>
+  </card>
+
+
 </cards>
